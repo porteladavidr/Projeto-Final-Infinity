@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: flex-end; /* Move o conteúdo para a direita */
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8) url('../img/hq721.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding-right: 6em; /* Adiciona espaçamento à direita */
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    color: #f0f0f0;
+    width: 300px;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #FFD700; /* Amarelo Batman */
+}
+
+.welcome-text {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 1em;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #121212;
+}
+
+form button:hover {
+    background-color: #FFC300;
+}
