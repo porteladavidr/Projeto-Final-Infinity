@@ -1,0 +1,25 @@
+USE [INDUSTRIA_WAYNE]
+GO
+
+/****** Object:  Table [dbo].[cameras]    Script Date: 17/11/2024 21:51:18 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[cameras](
+	[id] [int] NOT NULL,
+	[nome] [varchar](255) NOT NULL,
+	[ativa] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[cameras] ADD  DEFAULT ((1)) FOR [ativa]
+GO
+
+
