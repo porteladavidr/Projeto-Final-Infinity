@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batcaverna</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/batcaverna.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Itens na Batcaverna</h1>
+        <form id="add-item-form">
+            <input type="text" name="nome" placeholder="Nome" required />
+            <select name="tipo" required>
+                <option value="traje">Traje</option>
+                <option value="carro">Carro</option>
+                <option value="item">Item</option>
+            </select>
+            <input type="number" name="quantidade" placeholder="Quantidade" required />
+            <textarea name="descricao" placeholder="Descrição"></textarea>
+            <input type="file" name="imagem" accept="image/*" required />
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div class="items-container">
+            <div id="trajes" class="category">
+                <h2>Trajes</h2>
+            </div>
+            <div id="carros" class="category">
+                <h2>Carros</h2>
+            </div>
+            <div id="itens" class="category">
+                <h2>Itens</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/batcaverna.js') }}"></script>
+</body>
+</html>

@@ -25,10 +25,10 @@ def add_user(username, senha, nome_completo, email, role):
         connection.close()
 
 # Dados para adicionar
-username = "wayne"
-senha = "batman"
-nome_completo = "Bruce"
-email = "email@exemplo.com"
-role = "admin"
+username = "funcionario"
+senha = "funcionario"
+nome_completo = "funcionario"
+email = "funcionario@exemplo.com"
+role = "funcionario"
 
 add_user(username, senha, nome_completo, email, role)

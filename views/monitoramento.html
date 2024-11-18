@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/monitoria.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Monitoramento</h1>
+        <a href="/main">Voltar</a>
+    </div>
+    <div class="monitor-grid">
+        <div class="monitor" id="monitor1"></div>
+        <div class="monitor" id="monitor2"></div>
+        <div class="monitor" id="monitor3"></div>
+        <div class="monitor" id="monitor4"></div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/monitoria.js') }}"></script>
+</body>
+</html>

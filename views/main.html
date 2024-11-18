@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento - Indústrias Wayne</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Indústrias Wayne</h1>
+            <p>A tecnologia ao serviço de Gotham City</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#security">Área Restrita</a></li>
+                <li><a href="#resources">Gestão de Recursos</a></li>
+                <li><a href="#monitoring">Monitoramento</a></li>
+                <li id="user-info">Bem-vindo, {{ username }}</li>
+                <li><a href="/" id="logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="security" class="card">
+            <h2>Área Restrita</h2>
+            <p>Acesse a Batcaverna para gerenciar itens e equipamentos.</p>
+            <button id="restricted-access" onclick="window.location.href='/batcaverna?role={{ role }}'">Acessar Batcaverna</button>
+        </section>
+
+        <section id="resources_manager" class="card">
+            <h2>Gestão de Recursos</h2>
+            <p>Gerencie as câmeras de monitoramento.</p>
+            <button id="resources" onclick="window.location.href='/gestao?role={{ role }}'">Acessar Gestão de Recursos</button>
+        </section>
+
+        <section id="monitoring" class="card">
+            <h2>Monitoramento</h2>
+            <p>Monitore Gotham City em tempo real com visualizações das câmeras.</p>
+            <button onclick="window.location.href='/monitoramento'">Abrir Monitoramento</button>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Recursos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/gestao.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Gestão de Recursos</h1>
+            <a href="/main">Voltar</a>
+        </div>
+    </header>
+    <main>
+        <h2>Gerencie as câmeras de monitoramento</h2>
+        <form id="camera-form">
+            <label>
+                <input type="checkbox" id="camera1" data-id="1"> Câmera 1
+            </label>
+            <label>
+                <input type="checkbox" id="camera2" data-id="2"> Câmera 2
+            </label>
+            <label>
+                <input type="checkbox" id="camera3" data-id="3"> Câmera 3
+            </label>
+            <label>
+                <input type="checkbox" id="camera4" data-id="4"> Câmera 4
+            </label>
+            <button type="submit">Salvar Configurações</button>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename='scripts/gestao.js') }}"></script>
+</body>
+</html>
